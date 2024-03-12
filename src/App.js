@@ -21,7 +21,7 @@ function App() {
     // communicate with API
     // post input value 'prompt' to API end point 
     axios
-      .post("http://localhost:5555/chat", { prompt })
+      .post("https://kind-rose-hare-robe.cyclic.app/chat", { prompt })
       .then((res) => {
         setResponse(res.data);
         setLoading(false);
